@@ -25,11 +25,13 @@ struct ListView: View {
             .navigationDestination(for: Hike.self) { hike in
                 HikeDetailView(hike: hike)
             }
+            LightBulbView()
         }
     }
 }
 
 #Preview {
     ListView()
+        .environment(AppState())
 }
 

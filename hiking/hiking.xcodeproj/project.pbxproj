@@ -17,6 +17,8 @@
 		75EA91332CF7503000A22D17 /* HikeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EA91322CF7503000A22D17 /* HikeDetailView.swift */; };
 		75EA91392CF7516E00A22D17 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EA91382CF7516E00A22D17 /* ListView.swift */; };
 		75F129182D2C2B110062F8FF /* HikeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F129172D2C2B110062F8FF /* HikeCellView.swift */; };
+		75F1291B2D2C30600062F8FF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F1291A2D2C30600062F8FF /* AppState.swift */; };
+		75F1291D2D2C30960062F8FF /* LightBulbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F1291C2D2C30960062F8FF /* LightBulbView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		75EA91322CF7503000A22D17 /* HikeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeDetailView.swift; sourceTree = "<group>"; };
 		75EA91382CF7516E00A22D17 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		75F129172D2C2B110062F8FF /* HikeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeCellView.swift; sourceTree = "<group>"; };
+		75F1291A2D2C30600062F8FF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		75F1291C2D2C30960062F8FF /* LightBulbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightBulbView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 			children = (
 				75EA91052CF74EFA00A22D17 /* hikingApp.swift */,
 				75EA91302CF74F7E00A22D17 /* Models */,
+				75F129192D2C30490062F8FF /* Observables */,
 				75EA910B2CF74EFC00A22D17 /* Preview Content */,
 				75EA91352CF7505800A22D17 /* Resources */,
 				75EA91342CF7504B00A22D17 /* Views */,
@@ -148,6 +153,7 @@
 				75EA91322CF7503000A22D17 /* HikeDetailView.swift */,
 				75EA91382CF7516E00A22D17 /* ListView.swift */,
 				75F129172D2C2B110062F8FF /* HikeCellView.swift */,
+				75F1291C2D2C30960062F8FF /* LightBulbView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +164,14 @@
 				75EA91092CF74EFC00A22D17 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		75F129192D2C30490062F8FF /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				75F1291A2D2C30600062F8FF /* AppState.swift */,
+			);
+			path = Observables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,9 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F1291D2D2C30960062F8FF /* LightBulbView.swift in Sources */,
 				75EA91392CF7516E00A22D17 /* ListView.swift in Sources */,
 				75EA91312CF74F7F00A22D17 /* Hike.swift in Sources */,
 				75EA91332CF7503000A22D17 /* HikeDetailView.swift in Sources */,
+				75F1291B2D2C30600062F8FF /* AppState.swift in Sources */,
 				75EA91062CF74EFA00A22D17 /* hikingApp.swift in Sources */,
 				75F129182D2C2B110062F8FF /* HikeCellView.swift in Sources */,
 			);

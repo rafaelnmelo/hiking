@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct hikingApp: App {
+    
+    @State private var appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
             ListView()
+                .environment(appState)
         }
     }
 }

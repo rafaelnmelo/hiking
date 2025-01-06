@@ -26,6 +26,7 @@ struct HikeDetailView: View {
                 .font(.title)
             Text("\(hike.miles.formatted()) miles")
             Spacer()
+            LightBulbView()
         }.navigationTitle(hike.name)
         .navigationBarTitleDisplayMode(.inline)
     }
@@ -34,5 +35,6 @@ struct HikeDetailView: View {
 #Preview {
     NavigationStack {
         HikeDetailView(hike: Hike(name: "Salmonberry Trail", photo: "sal", miles: 6))
+            .environment(AppState())
     }
 }
